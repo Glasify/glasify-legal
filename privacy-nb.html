@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personvernerklæring — Glasify</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 19px; margin-top: 36px; margin-bottom: 10px; }
+  p, li { font-size: 16px; }
+  ul { padding-left: 22px; }
+  strong { font-weight: 600; }
+  a { color: #d6336c; }
+</style>
+</head>
+<body>
+<h1>Personvernerklæring</h1>
+<p class="updated">Sist oppdatert: 3. september 2026</p>
+<h2>1. Oversikt</h2>
+<p>Denne personvernerklæringen forklarer hvordan Glasify ("vi", "oss") samler inn, bruker, lagrer og deler informasjon når du bruker appen vår, inkludert ansiktsbilder brukt til å generere hudanalysen din.</p>
+<h2>2. Informasjon vi samler inn</h2>
+<ul>
+<li><strong>Ansiktsbilder:</strong> bilder du tar eller laster opp for analyse. Disse kan utgjøre biometriske eller helsenære data i enkelte jurisdiksjoner.</li>
+<li><strong>Skanneresultater:</strong> SkinScore, SkinAgeScan, Glow Profile og rutinedata generert fra bildene dine. Ditt nyeste skanneresultat lagres på våre servere slik at det kan gjenopprettes hvis du installerer appen på nytt og logger inn igjen.</li>
+<li><strong>Kontodata:</strong> din Apple-ID-identitet (via Sign in with Apple), brukt utelukkende til å opprette en varig konto knyttet til deg fremfor én enkelt enhet, samt abonnementsstatus (behandlet via Apples StoreKit; vi mottar ikke fullstendige betalingskortdetaljer).</li>
+<li><strong>Valgfrie profildata:</strong> fødselsdato (brukes kun til å beregne alderen din for personalisering av resultater og en valgfri bursdagsvarsel), hvis du velger å oppgi det, for å forbedre nøyaktigheten av resultatene.</li>
+<li><strong>Utbetalingsdata for verving:</strong> hvis du velger å delta i vervingsprogrammet vårt og har opptjent provisjon, samler vi inn navn, kontonummer og land du oppgir, utelukkende for å sende deg betaling.</li>
+</ul>
+<h2>3. Hvordan vi bruker ansiktsbilder</h2>
+<p>Ansiktsbildet ditt overføres sikkert til vår backend, som videresender det til vår AI-analyseleverandør (Anthropics Claude API) utelukkende for å generere hudanalyseresultatene dine. Vi bruker ikke ansiktsbildene dine til å trene tredjeparts AI-modeller, og vi selger ikke ansiktsbildene dine.</p>
+<h2>4. Lagring og oppbevaring</h2>
+<p>Selve ansiktsbildene lagres ikke etter at resultatene er generert. Skanneresultatene dine (SkinScore, SkinAgeScan, Glow Profile og rutinedata — ikke selve bildet) lagres på våre servere slik at ditt nyeste resultat kan gjenopprettes til kontoen din, også etter en ny installasjon, inntil du sletter dem. Du kan når som helst be om sletting av skannehistorikken din (se avsnitt 9).</p>
+<h2>5. Biometrinære data og samtykke</h2>
+<p>Ansiktsbilder, og eventuelle hudmålinger utledet fra dem, kan utgjøre biometriske eller helsenære data under enkelte lover (for eksempel EUs GDPR-bestemmelser om særlige kategorier av data, eller Illinois' Biometric Information Privacy Act). Vi behandler disse dataene kun på grunnlag av ditt uttrykkelige, informerte samtykke, gitt via en tidsstemplet bekreftelse du aktivt krysser av før ditt første skann — denne samtykkeregistreringen lagres server-side som bevis.</p>
+<p>Du kan når som helst trekke tilbake samtykket ved å slette kontoen og skannehistorikken din i Innstillinger, noe som også sletter dine lagrede skanneresultater og utledede målinger fra systemene våre innen rimelig tid.</p>
+<h2>6. Deling med tredjeparter</h2>
+<p>Vi deler data med:
+- Vår AI-analyseleverandør (<strong>Anthropic</strong>), for å behandle skannebilder og generere resultater.
+- <strong>Apple</strong>, via Sign in with Apple og StoreKit, for å autentisere deg og behandle abonnementskjøp (vi mottar ikke betalingsopplysningene dine).
+- Vår databaseleverandør (<strong>Supabase</strong>), for å lagre kontoen og skannestatusen din sikkert.
+- Affiliate-forhandlerpartnere, inkludert <strong>YesStyle</strong>, KUN i aggregert eller klikk-nivå form nødvendig for å spore affiliate-vervinger (f.eks. at en verving skjedde) — vi deler aldri ansiktsbildene eller fullstendige skanneresultater med forhandlerpartnere.
+- <strong>Wise</strong>, vår betalingspartner, KUN hvis du har opptjent vervingsprovisjon og har oppgitt utbetalingsdetaljer — utelukkende for å sende den betalingen.
+- Hvis du deltar i vervingsprogrammet vårt, ser brukere du verver kun vervekoden din; du ser kun aggregert status (aktiv/prøveperiode/avsluttet) om brukere du har vervet, aldri deres personopplysninger eller skanneresultater.</p>
+<p>Vi selger ikke personopplysningene dine til datameglere.</p>
+<h2>7. Rettslig grunnlag og internasjonale overføringer</h2>
+<p>Der GDPR eller lignende lov gjelder, behandler vi ansiktsbilder basert på ditt uttrykkelige samtykke (gitt på tidspunktet for skanning), gitt den sensitive naturen til biometrinære data. Data kan overføres til og behandles i land utenfor ditt eget, med bruk av egnede sikkerhetstiltak som EUs standardkontraktsbestemmelser.</p>
+<h2>8. Varsler</h2>
+<p>Hvis du aktiverer varsler, planlegger vi lokale påminnelser på enheten (ReplenishmentLoop) basert på din estimerte produktbruk. Denne planleggingen skjer på din enhet; vi trenger ikke tilgang til dine varslingsinteraksjoner for å gi påminnelser.</p>
+<h2>9. Dine rettigheter</h2>
+<p>Avhengig av hvor du befinner deg, kan du ha rett til å: få tilgang til personopplysningene vi har om deg; be om retting eller sletting av dataene dine (inkludert skanneresultater og utbetalingsdetaljer); protestere mot eller begrense visse former for behandling; og be om en kopi av dataene dine i et portabelt format. For å utøve disse rettighetene, kontakt <strong>privacy@glasify.app</strong>. Du kan også slette skannehistorikken din direkte i appen under Innstillinger.</p>
+<h2>10. Barns personvern</h2>
+<p>Glasify er ikke rettet mot barn under 18 år, og vi samler ikke bevisst inn ansiktsbilder eller andre personopplysninger fra barn under den alderen. Hvis du tror et barn har oppgitt data til oss, kontakt oss slik at vi kan slette det.</p>
+<h2>11. Sikkerhet</h2>
+<p>Vi bruker bransjestandard tekniske og organisatoriske tiltak, inkludert kryptering under overføring og lagring, for å beskytte dataene dine. Ingen system er fullstendig sikkert, og vi kan ikke garantere absolutt sikkerhet.</p>
+<h2>12. Endringer i denne erklæringen</h2>
+<p>Vi kan oppdatere denne personvernerklæringen periodisk. Vesentlige endringer vil bli kommunisert i appen eller via oppdateringsnotater på App Store.</p>
+<h2>13. Kontakt oss</h2>
+<p>For personvernspørsmål eller dataforespørsler, kontakt <strong>privacy@glasify.app</strong>.</p>
+<h2>14. Kosmetisk og pedagogisk ansvarsfraskrivelse</h2>
+<p>Påminnelse: alle resultater generert fra ansiktsbildene dine (SkinAgeScan, SkinScore, Glow Profile og rutineanbefalinger) er kun kosmetiske og pedagogiske estimater. De er ikke en medisinsk diagnose, og denne erklæringen endrer ikke det. Se våre Bruksvilkår for den fullstendige medisinske ansvarsfraskrivelsen.</p>
+</body>
+</html>
