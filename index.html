@@ -26,7 +26,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: September 3, 2026</p>
+<p class="updated">Last updated: September 25, 2026</p>
 
 <h2>1. Overview</h2>
 <p>This Privacy Policy explains how Glasify ("we", "us") collects, uses, stores, and shares information when you use our App, including facial scan images used to generate your skin analysis.</p>
@@ -37,7 +37,7 @@
   <li><strong>Scan Results:</strong> SkinScore, SkinAgeScan, Glow Profile, and routine data generated from your images. Your most recent scan result is stored on our servers so it can be restored if you reinstall the App and sign in again.</li>
   <li><strong>Account Data:</strong> your Apple ID identity (via Sign in with Apple), used solely to create a persistent account tied to you rather than to a single device, and subscription status (processed via Apple's StoreKit; we do not receive your full payment card details).</li>
   <li><strong>Optional Profile Data:</strong> date of birth (used only to compute your age for result personalization and an optional birthday notification), if you choose to provide it, to improve result accuracy.</li>
-  <li><strong>Referral Payout Data:</strong> if you choose to participate in our referral program and are owed commission, we collect the name, bank account number, and country you provide, solely to send you payment.</li>
+  <li><strong>Referral Payout Data:</strong> if you choose to set up referral payouts, you enter your email address and country in the App. Your identity and bank details are entered directly with our payout provider Stripe — never with us. We store only a reference to your Stripe account and the commission you have earned and been paid.</li>
 </ul>
 
 <h2>3. How We Use Face Scan Images</h2>
@@ -56,8 +56,9 @@
   <li>Our AI analysis provider (<strong>Anthropic</strong>), to process scan images and generate results.</li>
   <li><strong>Apple</strong>, via Sign in with Apple and StoreKit, to authenticate you and process subscription purchases (we do not receive your payment credentials).</li>
   <li>Our database provider (<strong>Supabase</strong>), to securely store your account and scan status.</li>
+  <li><strong>RevenueCat</strong>, which manages subscription status on our behalf, receiving your account identifier and purchase events from Apple (not your payment credentials).</li>
   <li>Affiliate retail partners, including <strong>YesStyle</strong>, ONLY in aggregate or click-level form necessary to track affiliate referrals (e.g., that a referral occurred) — we do not share your face images or full scan results with retail affiliate partners.</li>
-  <li><strong>Wise</strong>, our payment processing partner, ONLY if you are owed referral commission and have provided payout details — solely to send that payment.</li>
+  <li><strong>Stripe</strong>, our payout provider, ONLY if you set up referral payouts — Stripe collects your identity and bank details directly, under its own privacy policy (stripe.com/privacy), to verify you and send your commission.</li>
   <li>If you participate in our referral program, users you refer see only your referral code; you see only aggregate status (active/trial/churned) about users you referred, never their personal data or scan results.</li>
 </ul>
 <p>We do not sell your personal data to data brokers.</p>

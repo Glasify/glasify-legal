@@ -25,7 +25,7 @@
 </head>
 <body>
 <h1>Integritetspolicy</h1>
-<p class="updated">Senast uppdaterad: 3 september 2026</p>
+<p class="updated">Senast uppdaterad: 25 september 2026</p>
 <h2>1. Översikt</h2>
 <p>Denna integritetspolicy förklarar hur Glasify ("vi", "oss") samlar in, använder, lagrar och delar information när du använder vår app, inklusive ansiktsbilder som används för att generera din hudanalys.</p>
 <h2>2. Information vi samlar in</h2>
@@ -34,7 +34,7 @@
 <li><strong>Skanningsresultat:</strong> SkinScore, SkinAgeScan, Glow Profile och rutindata som genereras från dina bilder. Ditt senaste skanningsresultat lagras på våra servrar så att det kan återställas om du installerar om appen och loggar in igen.</li>
 <li><strong>Kontodata:</strong> din Apple-ID-identitet (via Sign in with Apple), som endast används för att skapa ett varaktigt konto kopplat till dig snarare än en enskild enhet, samt prenumerationsstatus (behandlas via Apples StoreKit; vi tar inte emot dina fullständiga betalkortsuppgifter).</li>
 <li><strong>Valfria profildata:</strong> födelsedatum (används endast för att beräkna din ålder för personanpassning av resultat och en valfri födelsedagsavisering), om du väljer att uppge det, för att förbättra resultatens noggrannhet.</li>
-<li><strong>Utbetalningsdata för värvning:</strong> om du väljer att delta i vårt värvningsprogram och har intjänad provision, samlar vi in namn, kontonummer och land du uppger, enbart för att skicka betalning till dig.</li>
+<li><strong>Utbetalningsdata för värvning:</strong> om du väljer att ställa in utbetalning för värvning anger du e-postadress och land i appen. Identitet och bankuppgifter registrerar du direkt hos vår utbetalningsleverantör Stripe — aldrig hos oss. Vi lagrar endast en referens till ditt Stripe-konto och den provision du har tjänat in och fått utbetald.</li>
 </ul>
 <h2>3. Hur vi använder ansiktsbilder</h2>
 <p>Ditt ansiktsbild överförs säkert till vår backend, som vidarebefordrar det till vår AI-analysleverantör (Anthropics Claude API) enbart för att generera dina hudanalysresultat. Vi använder inte dina ansiktsbilder för att träna tredjeparts AI-modeller, och vi säljer inte dina ansiktsbilder.</p>
@@ -44,13 +44,16 @@
 <p>Ansiktsbilder, och eventuella hudmätningar som härletts från dem, kan utgöra biometriska eller hälsonära uppgifter enligt vissa lagar (till exempel EU:s GDPR-bestämmelser om särskilda kategorier av uppgifter, eller Illinois Biometric Information Privacy Act). Vi behandlar dessa uppgifter endast baserat på ditt uttryckliga, informerade samtycke, som fångas via en tidsstämplad bekräftelse du aktivt kryssar i innan din första skanning — denna samtyckesregistrering lagras server-side som bevis.</p>
 <p>Du kan när som helst återkalla ditt samtycke genom att radera ditt konto och din skanningshistorik i Inställningar, vilket även raderar dina lagrade skanningsresultat och härledda mätningar från våra system inom rimlig tid.</p>
 <h2>6. Delning med tredje part</h2>
-<p>Vi delar data med:
-- Vår AI-analysleverantör (<strong>Anthropic</strong>), för att bearbeta skanningsbilder och generera resultat.
-- <strong>Apple</strong>, via Sign in with Apple och StoreKit, för att autentisera dig och behandla prenumerationsköp (vi tar inte emot dina betalningsuppgifter).
-- Vår databasleverantör (<strong>Supabase</strong>), för att säkert lagra ditt konto och din skanningsstatus.
-- Affiliate-återförsäljarpartners, inklusive <strong>YesStyle</strong>, ENDAST i aggregerad eller klicknivåform som behövs för att spåra affiliate-värvningar (t.ex. att en värvning skedde) — vi delar aldrig dina ansiktsbilder eller fullständiga skanningsresultat med återförsäljarpartners.
-- <strong>Wise</strong>, vår betalningspartner, ENDAST om du har intjänad värvningsprovision och har lämnat utbetalningsuppgifter — enbart för att skicka den betalningen.
-- Om du deltar i vårt värvningsprogram ser användare du värvar endast din värvningskod; du ser endast aggregerad status (aktiv/provperiod/avslutad) om användare du värvat, aldrig deras personuppgifter eller skanningsresultat.</p>
+<p>Vi delar data med:</p>
+<ul>
+<li>Vår AI-analysleverantör (<strong>Anthropic</strong>), för att bearbeta skanningsbilder och generera resultat.</li>
+<li><strong>Apple</strong>, via Sign in with Apple och StoreKit, för att autentisera dig och behandla prenumerationsköp (vi tar inte emot dina betalningsuppgifter).</li>
+<li>Vår databasleverantör (<strong>Supabase</strong>), för att säkert lagra ditt konto och din skanningsstatus.</li>
+<li><strong>RevenueCat</strong>, som hanterar prenumerationsstatus för vår räkning och tar emot din kontoidentifierare och köphändelser från Apple (inte dina betalningsuppgifter).</li>
+<li>Affiliate-återförsäljarpartners, inklusive <strong>YesStyle</strong>, ENDAST i aggregerad eller klicknivåform som behövs för att spåra affiliate-värvningar (t.ex. att en värvning skedde) — vi delar aldrig dina ansiktsbilder eller fullständiga skanningsresultat med återförsäljarpartners.</li>
+<li><strong>Stripe</strong>, vår utbetalningsleverantör, ENDAST om du ställer in utbetalning för värvning — Stripe samlar in identitet och bankuppgifter direkt, enligt sin egen integritetspolicy (stripe.com/privacy), för att verifiera dig och skicka din provision.</li>
+<li>Om du deltar i vårt värvningsprogram ser användare du värvar endast din värvningskod; du ser endast aggregerad status (aktiv/provperiod/avslutad) om användare du värvat, aldrig deras personuppgifter eller skanningsresultat.</li>
+</ul>
 <p>Vi säljer inte dina personuppgifter till datamäklare.</p>
 <h2>7. Rättslig grund och internationella överföringar</h2>
 <p>Där GDPR eller liknande lag gäller behandlar vi ansiktsbilder baserat på ditt uttryckliga samtycke (givet vid tidpunkten för skanning), med tanke på den känsliga karaktären hos biometrinära data. Data kan överföras till och behandlas i länder utanför ditt eget, med lämpliga skyddsåtgärder som EU-kommissionens standardavtalsklausuler.</p>

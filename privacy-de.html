@@ -25,7 +25,7 @@
 </head>
 <body>
 <h1>Datenschutzerklärung</h1>
-<p class="updated">Zuletzt aktualisiert: 3. September 2026</p>
+<p class="updated">Zuletzt aktualisiert: 25. September 2026</p>
 <h2>1. Überblick</h2>
 <p>Diese Datenschutzerklärung erklärt, wie Glasify ("wir", "uns") Informationen sammelt, verwendet, speichert und weitergibt, wenn du unsere App nutzt, einschließlich Gesichtsscan-Bilder, die zur Erstellung deiner Hautanalyse verwendet werden.</p>
 <h2>2. Informationen, die wir sammeln</h2>
@@ -34,7 +34,7 @@
 <li><strong>Scan-Ergebnisse:</strong> SkinScore, SkinAgeScan, Glow Profile und Routinedaten, die aus deinen Bildern generiert werden. Dein neuestes Scan-Ergebnis wird auf unseren Servern gespeichert, damit es wiederhergestellt werden kann, falls du die App neu installierst und dich erneut anmeldest.</li>
 <li><strong>Kontodaten:</strong> deine Apple-ID-Identität (über Sign in with Apple), die ausschließlich zur Erstellung eines dauerhaften, an dich statt an ein einzelnes Gerät gebundenen Kontos verwendet wird, sowie der Abonnementstatus (verarbeitet über Apples StoreKit; wir erhalten nicht deine vollständigen Zahlungskartendaten).</li>
 <li><strong>Optionale Profildaten:</strong> Geburtsdatum (wird nur zur Berechnung deines Alters zur Personalisierung der Ergebnisse und für eine optionale Geburtstagsbenachrichtigung verwendet), falls du dies angibst, um die Genauigkeit der Ergebnisse zu verbessern.</li>
-<li><strong>Auszahlungsdaten für Empfehlungen:</strong> falls du an unserem Empfehlungsprogramm teilnimmst und Provision verdient hast, erfassen wir Name, Bankkontonummer und Land, die du angibst, ausschließlich um dir die Zahlung zu senden.</li>
+<li><strong>Auszahlungsdaten für Empfehlungen:</strong> wenn du Auszahlungen für Empfehlungen einrichtest, gibst du in der App deine E-Mail-Adresse und dein Land an. Identitäts- und Bankdaten gibst du direkt bei unserem Auszahlungsanbieter Stripe ein — niemals bei uns. Wir speichern nur einen Verweis auf dein Stripe-Konto sowie die Provisionen, die du verdient hast und die dir ausgezahlt wurden.</li>
 </ul>
 <h2>3. Wie wir Gesichtsscan-Bilder verwenden</h2>
 <p>Dein Gesichtsscan-Bild wird sicher an unser Backend übertragen, das es zur ausschließlichen Erstellung deiner Hautanalyseergebnisse an unseren KI-Analyseanbieter (Anthropics Claude API) weiterleitet. Wir verwenden deine Gesichtsbilder nicht, um KI-Modelle von Drittanbietern zu trainieren, und wir verkaufen deine Gesichtsbilder nicht.</p>
@@ -44,13 +44,16 @@
 <p>Gesichtsscan-Bilder und daraus abgeleitete Hautmesswerte können unter bestimmten Gesetzen biometrische oder gesundheitsnahe Daten darstellen (zum Beispiel die Bestimmungen der EU-DSGVO zu besonderen Kategorien personenbezogener Daten oder das Biometric Information Privacy Act von Illinois). Wir verarbeiten diese Daten nur auf Grundlage deiner ausdrücklichen, informierten Einwilligung, die durch eine zeitgestempelte Bestätigung erfasst wird, die du vor deinem ersten Scan aktiv ankreuzt — diese Einwilligungsaufzeichnung wird serverseitig als Nachweis gespeichert.</p>
 <p>Du kannst deine Einwilligung jederzeit widerrufen, indem du dein Konto und deinen Scan-Verlauf in den Einstellungen löschst, wodurch auch deine gespeicherten Scan-Ergebnisse und abgeleiteten Messwerte innerhalb einer angemessenen Frist aus unseren Systemen gelöscht werden.</p>
 <h2>6. Weitergabe an Dritte</h2>
-<p>Wir teilen Daten mit:
-- Unserem KI-Analyseanbieter (<strong>Anthropic</strong>), zur Verarbeitung von Scan-Bildern und Erstellung von Ergebnissen.
-- <strong>Apple</strong>, über Sign in with Apple und StoreKit, zur Authentifizierung und Verarbeitung von Abonnementkäufen (wir erhalten nicht deine Zahlungsdaten).
-- Unserem Datenbankanbieter (<strong>Supabase</strong>), zur sicheren Speicherung deines Kontos und Scan-Status.
-- Affiliate-Einzelhandelspartnern, einschließlich <strong>YesStyle</strong>, NUR in aggregierter oder Klick-Ebenen-Form, die zur Nachverfolgung von Affiliate-Empfehlungen notwendig ist (z. B. dass eine Empfehlung stattfand) — wir teilen niemals deine Gesichtsbilder oder vollständigen Scan-Ergebnisse mit Einzelhandelspartnern.
-- <strong>Wise</strong>, unserem Zahlungspartner, NUR wenn du Empfehlungsprovision verdient und Auszahlungsdetails angegeben hast — ausschließlich zur Zahlungsübermittlung.
-- Falls du an unserem Empfehlungsprogramm teilnimmst, sehen von dir geworbene Nutzer nur deinen Empfehlungscode; du siehst nur den aggregierten Status (aktiv/Testphase/abgebrochen) der von dir geworbenen Nutzer, nie deren persönliche Daten oder Scan-Ergebnisse.</p>
+<p>Wir teilen Daten mit:</p>
+<ul>
+<li>Unserem KI-Analyseanbieter (<strong>Anthropic</strong>), zur Verarbeitung von Scan-Bildern und Erstellung von Ergebnissen.</li>
+<li><strong>Apple</strong>, über Sign in with Apple und StoreKit, zur Authentifizierung und Verarbeitung von Abonnementkäufen (wir erhalten nicht deine Zahlungsdaten).</li>
+<li>Unserem Datenbankanbieter (<strong>Supabase</strong>), zur sicheren Speicherung deines Kontos und Scan-Status.</li>
+<li><strong>RevenueCat</strong>, der den Abonnementstatus in unserem Auftrag verwaltet und dazu deine Konto-ID und Kaufereignisse von Apple erhält (nicht deine Zahlungsdaten).</li>
+<li>Affiliate-Einzelhandelspartnern, einschließlich <strong>YesStyle</strong>, NUR in aggregierter oder Klick-Ebenen-Form, die zur Nachverfolgung von Affiliate-Empfehlungen notwendig ist (z. B. dass eine Empfehlung stattfand) — wir teilen niemals deine Gesichtsbilder oder vollständigen Scan-Ergebnisse mit Einzelhandelspartnern.</li>
+<li><strong>Stripe</strong>, unserem Auszahlungsanbieter, NUR wenn du Auszahlungen für Empfehlungen einrichtest — Stripe erhebt deine Identitäts- und Bankdaten direkt, gemäß seiner eigenen Datenschutzerklärung (stripe.com/privacy), um dich zu verifizieren und deine Provision auszuzahlen.</li>
+<li>Falls du an unserem Empfehlungsprogramm teilnimmst, sehen von dir geworbene Nutzer nur deinen Empfehlungscode; du siehst nur den aggregierten Status (aktiv/Testphase/abgebrochen) der von dir geworbenen Nutzer, nie deren persönliche Daten oder Scan-Ergebnisse.</li>
+</ul>
 <p>Wir verkaufen deine personenbezogenen Daten nicht an Datenhändler.</p>
 <h2>7. Rechtsgrundlage und internationale Übermittlungen</h2>
 <p>Wo die DSGVO oder ähnliches Recht gilt, verarbeiten wir Gesichtsscan-Bilder auf Grundlage deiner ausdrücklichen Einwilligung (zum Zeitpunkt des Scans gegeben), angesichts der sensiblen Natur biometrienaher Daten. Daten können in Länder außerhalb deines eigenen übertragen und dort verarbeitet werden, unter Verwendung geeigneter Garantien wie der Standardvertragsklauseln der Europäischen Kommission.</p>

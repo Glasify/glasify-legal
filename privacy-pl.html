@@ -25,7 +25,7 @@
 </head>
 <body>
 <h1>Polityka Prywatności</h1>
-<p class="updated">Ostatnia aktualizacja: 3 września 2026</p>
+<p class="updated">Ostatnia aktualizacja: 25 września 2026</p>
 <h2>1. Przegląd</h2>
 <p>Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób Glasify ("my") zbiera, wykorzystuje, przechowuje i udostępnia informacje podczas korzystania z naszej aplikacji, w tym zdjęcia twarzy używane do generowania analizy skóry.</p>
 <h2>2. Informacje, które zbieramy</h2>
@@ -34,7 +34,7 @@
 <li><strong>Wyniki skanowania:</strong> SkinScore, SkinAgeScan, Glow Profile i dane rutynowe generowane z Twoich zdjęć. Twój najnowszy wynik skanowania jest przechowywany na naszych serwerach, aby można było go przywrócić w przypadku ponownej instalacji aplikacji i ponownego logowania.</li>
 <li><strong>Dane konta:</strong> Twoja tożsamość Apple ID (poprzez Sign in with Apple), używana wyłącznie do utworzenia trwałego konta powiązanego z Tobą, a nie z jednym urządzeniem, oraz status subskrypcji (przetwarzany poprzez Apple StoreKit; nie otrzymujemy pełnych danych Twojej karty płatniczej).</li>
 <li><strong>Opcjonalne dane profilu:</strong> data urodzenia (używana wyłącznie do obliczenia Twojego wieku w celu personalizacji wyników i opcjonalnego powiadomienia urodzinowego), jeśli zdecydujesz się ją podać, aby poprawić dokładność wyników.</li>
-<li><strong>Dane wypłat za polecenia:</strong> jeśli zdecydujesz się uczestniczyć w naszym programie poleceń i masz naliczoną prowizję, zbieramy imię i nazwisko, numer konta bankowego oraz kraj, które podajesz, wyłącznie w celu wysłania Ci płatności.</li>
+<li><strong>Dane wypłat za polecenia:</strong> jeśli zdecydujesz się skonfigurować wypłaty za polecenia, podajesz w aplikacji adres e-mail i kraj. Dane tożsamości i konta bankowego wprowadzasz bezpośrednio u naszego dostawcy wypłat, Stripe — nigdy u nas. Przechowujemy jedynie odniesienie do Twojego konta Stripe oraz informacje o prowizji naliczonej i wypłaconej.</li>
 </ul>
 <h2>3. Jak wykorzystujemy zdjęcia skanu twarzy</h2>
 <p>Twoje zdjęcie skanu twarzy jest bezpiecznie przesyłane do naszego backendu, który przekazuje je do naszego dostawcy analiz AI (Claude API firmy Anthropic) wyłącznie w celu wygenerowania wyników analizy skóry. Nie wykorzystujemy Twoich zdjęć twarzy do trenowania modeli AI stron trzecich i nie sprzedajemy Twoich zdjęć twarzy.</p>
@@ -44,13 +44,16 @@
 <p>Zdjęcia skanu twarzy oraz wszelkie wskaźniki skóry z nich wyodrębnione mogą stanowić dane biometryczne lub zbliżone do zdrowotnych na mocy niektórych przepisów (na przykład przepisy RODO UE dotyczące szczególnych kategorii danych lub ustawa Illinois o ochronie danych biometrycznych). Przetwarzamy te dane wyłącznie na podstawie Twojej wyraźnej, świadomej zgody, rejestrowanej poprzez oznaczone czasowo potwierdzenie, które aktywnie zaznaczasz przed pierwszym skanowaniem — ten zapis zgody jest przechowywany po stronie serwera jako dowód.</p>
 <p>Możesz wycofać zgodę w dowolnym momencie, usuwając swoje konto i historię skanowania w Ustawieniach, co powoduje również usunięcie przechowywanych wyników skanowania i wyodrębnionych wskaźników z naszych systemów w rozsądnym terminie.</p>
 <h2>6. Udostępnianie stronom trzecim</h2>
-<p>Udostępniamy dane:
-- Naszemu dostawcy analiz AI (<strong>Anthropic</strong>), w celu przetwarzania zdjęć skanowania i generowania wyników.
-- <strong>Apple</strong>, poprzez Sign in with Apple i StoreKit, w celu uwierzytelnienia Cię i przetworzenia zakupów subskrypcji (nie otrzymujemy Twoich danych płatniczych).
-- Naszemu dostawcy bazy danych (<strong>Supabase</strong>), w celu bezpiecznego przechowywania Twojego konta i statusu skanowania.
-- Partnerom detalicznym afiliacyjnym, w tym <strong>YesStyle</strong>, WYŁĄCZNIE w formie zagregowanej lub na poziomie kliknięć, niezbędnej do śledzenia poleceń afiliacyjnych (np. że polecenie miało miejsce) — nigdy nie udostępniamy Twoich zdjęć twarzy ani pełnych wyników skanowania partnerom detalicznym.
-- <strong>Wise</strong>, naszemu partnerowi płatniczemu, WYŁĄCZNIE jeśli masz naliczoną prowizję za polecenia i podałeś dane do wypłaty — wyłącznie w celu wysłania tej płatności.
-- Jeśli uczestniczysz w naszym programie poleceń, użytkownicy, których polecasz, widzą tylko Twój kod polecający; Ty widzisz tylko zagregowany status (aktywny/okres próbny/zakończony) poleconych użytkowników, nigdy ich danych osobowych ani wyników skanowania.</p>
+<p>Udostępniamy dane:</p>
+<ul>
+<li>Naszemu dostawcy analiz AI (<strong>Anthropic</strong>), w celu przetwarzania zdjęć skanowania i generowania wyników.</li>
+<li><strong>Apple</strong>, poprzez Sign in with Apple i StoreKit, w celu uwierzytelnienia Cię i przetworzenia zakupów subskrypcji (nie otrzymujemy Twoich danych płatniczych).</li>
+<li>Naszemu dostawcy bazy danych (<strong>Supabase</strong>), w celu bezpiecznego przechowywania Twojego konta i statusu skanowania.</li>
+<li><strong>RevenueCat</strong>, który zarządza statusem subskrypcji w naszym imieniu i otrzymuje identyfikator Twojego konta oraz zdarzenia zakupów od Apple (nie Twoje dane płatnicze).</li>
+<li>Partnerom detalicznym afiliacyjnym, w tym <strong>YesStyle</strong>, WYŁĄCZNIE w formie zagregowanej lub na poziomie kliknięć, niezbędnej do śledzenia poleceń afiliacyjnych (np. że polecenie miało miejsce) — nigdy nie udostępniamy Twoich zdjęć twarzy ani pełnych wyników skanowania partnerom detalicznym.</li>
+<li><strong>Stripe</strong>, naszemu dostawcy wypłat, WYŁĄCZNIE jeśli skonfigurujesz wypłaty za polecenia — Stripe zbiera dane tożsamości i konta bankowego bezpośrednio, zgodnie z własną polityką prywatności (stripe.com/privacy), aby zweryfikować Twoją tożsamość i wysłać Ci prowizję.</li>
+<li>Jeśli uczestniczysz w naszym programie poleceń, użytkownicy, których polecasz, widzą tylko Twój kod polecający; Ty widzisz tylko zagregowany status (aktywny/okres próbny/zakończony) poleconych użytkowników, nigdy ich danych osobowych ani wyników skanowania.</li>
+</ul>
 <p>Nie sprzedajemy Twoich danych osobowych brokerom danych.</p>
 <h2>7. Podstawa prawna i międzynarodowe przekazywanie danych</h2>
 <p>Tam, gdzie obowiązuje RODO lub podobne prawo, przetwarzamy zdjęcia skanu twarzy na podstawie Twojej wyraźnej zgody (udzielonej w momencie skanowania), biorąc pod uwagę wrażliwy charakter danych zbliżonych do biometrycznych. Dane mogą być przekazywane i przetwarzane w krajach spoza Twojego, przy zastosowaniu odpowiednich zabezpieczeń, takich jak Standardowe Klauzule Umowne Komisji Europejskiej.</p>
