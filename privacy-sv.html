@@ -35,6 +35,8 @@
 <li><strong>Kontodata:</strong> din Apple-ID-identitet (via Sign in with Apple), som endast används för att skapa ett varaktigt konto kopplat till dig snarare än en enskild enhet, samt prenumerationsstatus (behandlas via Apples StoreKit; vi tar inte emot dina fullständiga betalkortsuppgifter).</li>
 <li><strong>Valfria profildata:</strong> födelsedatum (används endast för att beräkna din ålder för personanpassning av resultat och en valfri födelsedagsavisering), om du väljer att uppge det, för att förbättra resultatens noggrannhet.</li>
 <li><strong>Utbetalningsdata för värvning:</strong> om du väljer att ställa in utbetalning för värvning anger du e-postadressen till ditt PayPal-konto i appen. Vi lagrar e-postadressen och den provision du har tjänat in och fått utbetald, och delar den med PayPal enbart för att betala dig.</li>
+<li><strong>Värvningskod från urklipp:</strong> endast vid första starten kontrollerar appen urklippet en gång efter en Glasify-värvningskod, så att en inbjudningslänk du tryckte på före installationen fortfarande räknas. Inget annat från urklippet läses eller skickas.</li>
+<li><strong>Väntelista för Android (endast webbplatsen):</strong> om du anmäler dig på glasify.app för att få veta när Android-versionen lanseras lagrar vi din e-postadress enbart för att meddela dig, och raderar den på begäran.</li>
 </ul>
 <h2>3. Hur vi använder ansiktsbilder</h2>
 <p>Ditt ansiktsbild överförs säkert till vår backend, som vidarebefordrar det till vår AI-analysleverantör (Anthropics Claude API) enbart för att generera dina hudanalysresultat. Vi använder inte dina ansiktsbilder för att träna tredjeparts AI-modeller, och vi säljer inte dina ansiktsbilder.</p>
@@ -50,6 +52,7 @@
 <li><strong>Apple</strong>, via Sign in with Apple och StoreKit, för att autentisera dig och behandla prenumerationsköp (vi tar inte emot dina betalningsuppgifter).</li>
 <li>Vår databasleverantör (<strong>Supabase</strong>), för att säkert lagra ditt konto och din skanningsstatus.</li>
 <li><strong>RevenueCat</strong>, som hanterar prenumerationsstatus för vår räkning och tar emot din kontoidentifierare och köphändelser från Apple (inte dina betalningsuppgifter).</li>
+<li><strong>Render</strong>, vår driftsleverantör, som kör servrarna som hanterar dina förfrågningar (inklusive skanningsbilder under överföring).</li>
 <li>Affiliate-återförsäljarpartners, inklusive <strong>YesStyle</strong>, ENDAST i aggregerad eller klicknivåform som behövs för att spåra affiliate-värvningar (t.ex. att en värvning skedde) — vi delar aldrig dina ansiktsbilder eller fullständiga skanningsresultat med återförsäljarpartners.</li>
 <li><strong>PayPal</strong>, vår utbetalningsleverantör, ENDAST om du ställer in utbetalning för värvning — vi delar din PayPal-e-postadress och utbetalningsbeloppet så att PayPal kan skicka din provision, enligt PayPals egen integritetspolicy (paypal.com/privacy).</li>
 <li>Om du deltar i vårt värvningsprogram ser användare du värvar endast din värvningskod; du ser endast aggregerad status (aktiv/provperiod/avslutad) om användare du värvat, aldrig deras personuppgifter eller skanningsresultat.</li>

@@ -35,6 +35,8 @@
 <li><strong>Kontodata:</strong> din Apple-ID-identitet (via Sign in with Apple), som udelukkende bruges til at oprette en vedvarende konto knyttet til dig frem for én enkelt enhed, samt abonnementsstatus (behandlet via Apples StoreKit; vi modtager ikke dine fulde betalingskortoplysninger).</li>
 <li><strong>Valgfrie profildata:</strong> fødselsdato (bruges kun til at beregne din alder til personalisering af resultater og en valgfri fødselsdagsnotifikation), hvis du vælger at oplyse det, for at forbedre resultaternes nøjagtighed.</li>
 <li><strong>Udbetalingsdata for henvisning:</strong> hvis du vælger at opsætte udbetaling for henvisninger, angiver du e-mailadressen på din PayPal-konto i appen. Vi gemmer e-mailadressen og den provision, du har optjent og fået udbetalt, og deler den med PayPal udelukkende for at betale dig.</li>
+<li><strong>Henvisningskode fra udklipsholderen:</strong> kun ved første opstart tjekker appen udklipsholderen én gang for en Glasify-henvisningskode, så et invitationslink, du trykkede på før installation, stadig tæller. Intet andet fra udklipsholderen læses eller sendes.</li>
+<li><strong>Venteliste til Android (kun hjemmesiden):</strong> hvis du tilmelder dig på glasify.app for at få besked, når Android-versionen lanceres, gemmer vi din e-mailadresse udelukkende for at give dig besked, og sletter den på anmodning.</li>
 </ul>
 <h2>3. Hvordan vi bruger ansigtsscanningsbilleder</h2>
 <p>Dit ansigtsbillede overføres sikkert til vores backend, som videresender det til vores AI-analyseudbyder (Anthropics Claude API) udelukkende for at generere dine hudanalyseresultater. Vi bruger ikke dine ansigtsbilleder til at træne tredjeparts AI-modeller, og vi sælger ikke dine ansigtsbilleder.</p>
@@ -50,6 +52,7 @@
 <li><strong>Apple</strong>, via Sign in with Apple og StoreKit, for at autentificere dig og behandle abonnementskøb (vi modtager ikke dine betalingsoplysninger).</li>
 <li>Vores databaseudbyder (<strong>Supabase</strong>), for sikkert at gemme din konto og scanningsstatus.</li>
 <li><strong>RevenueCat</strong>, som håndterer abonnementsstatus på vores vegne og modtager din kontoidentifikator og købshændelser fra Apple (ikke dine betalingsoplysninger).</li>
+<li><strong>Render</strong>, vores hostingudbyder, som kører de servere, der håndterer dine forespørgsler (herunder scanningsbilleder under overførsel).</li>
 <li>Affiliate-detailpartnere, herunder <strong>YesStyle</strong>, KUN i aggregeret eller klik-niveau form nødvendig for at spore affiliate-henvisninger (f.eks. at en henvisning fandt sted) — vi deler aldrig dine ansigtsbilleder eller fulde scanningsresultater med detailpartnere.</li>
 <li><strong>PayPal</strong>, vores udbetalingsudbyder, KUN hvis du opsætter udbetaling for henvisninger — vi deler din PayPal-e-mailadresse og udbetalingsbeløbet, så PayPal kan sende din provision, under PayPals egen privatlivspolitik (paypal.com/privacy).</li>
 <li>Hvis du deltager i vores henvisningsprogram, ser brugere, du henviser, kun din henvisningskode; du ser kun aggregeret status (aktiv/prøveperiode/ophørt) om brugere, du har henvist, aldrig deres personoplysninger eller scanningsresultater.</li>
