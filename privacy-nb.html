@@ -26,46 +26,38 @@
   .langs a { text-decoration: none; }
   .langs a[aria-current] { color: #f5ebec; font-weight: 600; }
 </style>
-<link rel="alternate" hreflang="en" href="https://privacy.glasify.app/">
-<link rel="alternate" hreflang="nb" href="https://privacy.glasify.app/privacy-nb.html">
-<link rel="alternate" hreflang="sv" href="https://privacy.glasify.app/privacy-sv.html">
-<link rel="alternate" hreflang="da" href="https://privacy.glasify.app/privacy-da.html">
-<link rel="alternate" hreflang="de" href="https://privacy.glasify.app/privacy-de.html">
-<link rel="alternate" hreflang="pl" href="https://privacy.glasify.app/privacy-pl.html">
-<link rel="alternate" hreflang="fr" href="https://privacy.glasify.app/privacy-fr.html">
+
+
+
+
+
+
+
 </head>
-<body>
-<nav class="langs" aria-label="Language"><a href="index.html" hreflang="en" lang="en">English</a> <a href="privacy-nb.html" hreflang="nb" lang="nb" aria-current="page">Norsk</a> <a href="privacy-sv.html" hreflang="sv" lang="sv">Svenska</a> <a href="privacy-da.html" hreflang="da" lang="da">Dansk</a> <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a> <a href="privacy-pl.html" hreflang="pl" lang="pl">Polski</a> <a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a></nav>
+<body><nav aria-label="Language"><a href="privacy-nb.html" lang="nb">Norsk</a> · <a href="privacy-sv.html" lang="sv">Svenska</a> · <a href="privacy-da.html" lang="da">Dansk</a> · <a href="index.html" lang="en">English</a></nav>
 <h1>Personvernerklæring</h1>
-<p class="updated">Sist oppdatert: 4. oktober 2026</p>
+<p><strong>Sist oppdatert: 14. oktober 2026</strong></p>
 <h2>1. Oversikt</h2>
-<p>Denne personvernerklæringen forklarer hvordan Glasify ("vi", "oss") samler inn, bruker, lagrer og deler informasjon når du bruker appen vår, inkludert ansiktsbilder brukt til å generere hudanalysen din. Glasify drives av Planting Software, et enkeltpersonforetak registrert i Norge, som er behandlingsansvarlig for personopplysningene dine.</p>
+<p>Denne personvernerklæringen forklarer hvordan Glasify (&quot;vi&quot;, &quot;oss&quot;) samler inn, bruker, lagrer og deler informasjon når du bruker appen vår, inkludert ansiktsbilder brukt til å generere hudanalysen din. Glasify drives av Planting Software, et enkeltpersonforetak registrert i Norge, som er behandlingsansvarlig for personopplysningene dine.</p>
 <h2>2. Informasjon vi samler inn</h2>
-<ul>
-<li><strong>Ansiktsbilder:</strong> bilder du tar eller laster opp for analyse. Disse kan utgjøre biometriske eller helsenære data i enkelte jurisdiksjoner.</li>
-<li><strong>Skanneresultater:</strong> SkinScore, SkinAgeScan, Glow Profile og rutinedata generert fra bildene dine. Skanneresultatene dine lagres på våre servere slik at det nyeste kan gjenopprettes hvis du installerer appen på nytt og logger inn igjen.</li>
-<li><strong>Kontodata:</strong> din Apple-ID-identitet (via Sign in with Apple), brukt utelukkende til å opprette en varig konto knyttet til deg fremfor én enkelt enhet, samt abonnementsstatus (behandlet via Apples StoreKit; vi mottar ikke fullstendige betalingskortdetaljer).</li>
-<li><strong>Valgfrie profildata:</strong> fødselsdato, hvis du velger å oppgi den. Den lagres kun på enheten din og brukes til å beregne alderen din for personalisering av resultater og en valgfri bursdagsvarsel; bare alderen din (ikke fødselsdatoen) sendes med en skanning.</li>
-<li><strong>Venteliste for lansering (kun nettsiden):</strong> hvis du melder deg på glasify.app for å få beskjed når Glasify lanseres på iPhone eller Android, lagrer vi e-postadressen din og plattformen du valgte utelukkende for å varsle deg, og sletter dem på forespørsel.</li>
-</ul>
+<ul><li><strong>Ansiktsbilder:</strong> bilder du tar eller laster opp for analyse. Disse kan utgjøre biometriske eller helsenære data i enkelte jurisdiksjoner.</li><li><strong>Skanneresultater:</strong> SkinScore, SkinAgeScan, Glow Profile og rutinedata generert fra bildene dine. Skanneresultatene dine lagres på våre servere slik at det nyeste kan gjenopprettes hvis du installerer appen på nytt og logger inn igjen.</li><li><strong>Kontodata:</strong> din Apple-ID-identitet (via Sign in with Apple), brukt utelukkende til å opprette en varig konto knyttet til deg fremfor én enkelt enhet, samt abonnementsstatus (behandlet via Apples StoreKit; vi mottar ikke fullstendige betalingskortdetaljer).</li><li><strong>Valgfrie profildata:</strong> fødselsdato, hvis du velger å oppgi den. Den lagres kun på enheten din og brukes til å beregne alderen din for personalisering av resultater og en valgfri bursdagsvarsel; bare alderen din (ikke fødselsdatoen) sendes med en skanning.</li><li><strong>Venteliste for lansering (kun nettsiden):</strong> hvis du melder deg på glasify.app for å få beskjed når Glasify lanseres på iPhone eller Android, lagrer vi e-postadressen din og plattformen du valgte utelukkende for å varsle deg, og sletter dem på forespørsel.</li></ul>
 <h2>3. Hvordan vi bruker ansiktsbilder</h2>
-<p>Ansiktsbildet ditt overføres sikkert til vår backend, som videresender det til vår AI-analyseleverandør (Anthropics Claude API) utelukkende for å generere hudanalyseresultatene dine. Vi bruker ikke ansiktsbildene dine til å trene tredjeparts AI-modeller, og vi selger ikke ansiktsbildene dine.</p>
+<p>Først når du aktivt samtykker før en skanning, sender Glasify ansiktsbildet ditt (eller utledede hudmålinger), alderen din hvis oppgitt, og valgt språk via serveren vår hos Render til Anthropics Claude API. Anthropic bruker dette til å lage kosmetisk hudanalyse og rutine. Apple-kontoidentifikator, e-post og betalingsopplysninger inngår ikke i AI-forespørselen. Du kan avbryte uten å sende bildet. Vi selger ikke bildene dine eller gir tillatelse til å bruke dem til modelltrening.</p>
 <h2>4. Lagring og oppbevaring</h2>
-<p>Selve ansiktsbildene lagres ikke etter at resultatene er generert. Skanneresultatene dine (SkinScore, SkinAgeScan, Glow Profile og rutinedata — ikke selve bildet) lagres på våre servere slik at ditt nyeste resultat kan gjenopprettes til kontoen din, også etter en ny installasjon, inntil du sletter dem. Du kan når som helst be om sletting av skannehistorikken din (se avsnitt 9).</p>
+<p>Glasify lagrer ikke originalbildet i databasen. Anthropic behandler API-inndata og -utdata etter sine kommersielle vilkår og lagringsregler: vanlige API-data slettes normalt innen 30 dager, med unntak for lovkrav/sikkerhet og gjeldende lagringsinnstillinger for modell eller konto. Sletting av Glasify-kontoen innebærer ikke umiddelbar sletting i Anthropics systemer. Skanneresultater og samtykkeregistreringer lagres på kontoen til sletting; sikkerhetskopier kan bruke mer tid på å utløpe.</p>
 <h2>5. Biometrinære data og samtykke</h2>
-<p>Ansiktsbilder, og eventuelle hudmålinger utledet fra dem, kan utgjøre biometriske eller helsenære data under enkelte lover (for eksempel GDPRs bestemmelser om særlige kategorier av personopplysninger, eller Illinois' Biometric Information Privacy Act). Vi behandler disse dataene kun på grunnlag av ditt uttrykkelige, informerte samtykke, som registreres med en tidsstemplet bekreftelse du aktivt huker av før hver skanning — denne samtykkeregistreringen lagres på serveren som dokumentasjon.</p>
+<p>Ansiktsbilder, og eventuelle hudmålinger utledet fra dem, kan utgjøre biometriske eller helsenære data under enkelte lover (for eksempel GDPRs bestemmelser om særlige kategorier av personopplysninger, eller Illinois&#x27; Biometric Information Privacy Act). Vi behandler disse dataene kun på grunnlag av ditt uttrykkelige, informerte samtykke, som registreres med en tidsstemplet bekreftelse du aktivt huker av før hver skanning — denne samtykkeregistreringen lagres på serveren som dokumentasjon.</p>
 <p>Du kan når som helst trekke tilbake samtykket ved å slette kontoen din i Innstillinger, noe som også sletter lagrede skanneresultater, utledede målinger og samtykkeregistreringer fra systemene våre innen rimelig tid.</p>
 <h2>6. Deling med tredjeparter</h2>
-<p>Vi deler data med:</p>
-<ul>
-<li>Vår AI-analyseleverandør (<strong>Anthropic</strong>), for å behandle skannebilder og generere resultater.</li>
-<li><strong>Apple</strong>, via Sign in with Apple og StoreKit, for å autentisere deg og behandle abonnementskjøp (vi mottar ikke betalingsopplysningene dine).</li>
-<li>Vår databaseleverandør (<strong>Supabase</strong>), for å lagre kontoen og skannestatusen din sikkert.</li>
-<li><strong>RevenueCat</strong>, som håndterer abonnementsstatus på våre vegne, og mottar kontoidentifikatoren din og kjøpshendelser fra Apple (ikke betalingsopplysningene dine).</li>
-<li><strong>Render</strong>, vår driftsleverandør, som kjører serverne som håndterer forespørslene dine (inkludert skannebilder under overføring).</li>
-<li>Affiliate-forhandlerpartnere, inkludert <strong>YesStyle</strong>, KUN i aggregert eller klikk-nivå form nødvendig for å knytte kjøp til produktlenkene våre (f.eks. at et klikk skjedde) — vi deler aldri ansiktsbildene eller fullstendige skanneresultater med forhandlerpartnere.</li>
-</ul>
+<p>Vi deler data med:
+- Vår AI-analyseleverandør (<strong>Anthropic</strong>), for å behandle skannebilder og generere resultater.
+- <strong>Apple</strong>, via Sign in with Apple og StoreKit, for å autentisere deg og behandle abonnementskjøp (vi mottar ikke betalingsopplysningene dine).
+- Vår databaseleverandør (<strong>Supabase</strong>), for å lagre kontoen og skannestatusen din sikkert.
+- <strong>RevenueCat</strong>, som håndterer abonnementsstatus på våre vegne, og mottar kontoidentifikatoren din og kjøpshendelser fra Apple (ikke betalingsopplysningene dine).
+- <strong>Render</strong>, vår driftsleverandør, som kjører serverne som håndterer forespørslene dine (inkludert skannebilder under overføring).
+- Affiliate-forhandlerpartnere, inkludert <strong>YesStyle</strong>, KUN i aggregert eller klikk-nivå form nødvendig for å knytte kjøp til produktlenkene våre (f.eks. at et klikk skjedde) — vi deler aldri ansiktsbildene eller fullstendige skanneresultater med forhandlerpartnere.</p>
 <p>Vi selger ikke personopplysningene dine til datameglere.</p>
+<p>Vår kommersielle AI-leverandør er gjennom avtaler om konfidensialitet, databehandling og sikkerhet pålagt å gi minst tilsvarende beskyttelse som beskrevet her. Anthropics databehandleravtale regulerer behandling, underleverandører og sikring av internasjonale overføringer. Se <a href="https://www.anthropic.com/legal/data-processing-addendum">Anthropics databehandleravtale</a> og <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">lagringsregler for API</a>.</p>
 <h2>7. Rettslig grunnlag og internasjonale overføringer</h2>
 <p>Der GDPR eller lignende lov gjelder, behandler vi ansiktsbilder basert på ditt uttrykkelige samtykke (gitt på tidspunktet for skanning), gitt den sensitive naturen til biometrinære data. Data kan overføres til og behandles i land utenfor ditt eget, med bruk av egnede sikkerhetstiltak som EUs standardkontraktsbestemmelser.</p>
 <h2>8. Varsler</h2>
@@ -82,5 +74,5 @@
 <p>For personvernspørsmål eller dataforespørsler, kontakt <strong>privacy@glasify.app</strong>.</p>
 <h2>14. Kosmetisk og pedagogisk ansvarsfraskrivelse</h2>
 <p>Påminnelse: alle resultater generert fra ansiktsbildene dine (SkinAgeScan, SkinScore, Glow Profile og rutineanbefalinger) er kun kosmetiske og pedagogiske estimater. De er ikke en medisinsk diagnose, og denne erklæringen endrer ikke det. Se våre Bruksvilkår for den fullstendige medisinske ansvarsfraskrivelsen.</p>
-</body>
-</html>
+<p>
+Apple håndterer abonnementsbetalinger, oppsigelse og refusjonsforespørsler. Administrer abonnement på https://apps.apple.com/account/subscriptions og søk om eventuell refusjon på https://reportaproblem.apple.com. Apple avgjør om kjøpet kvalifiserer for refusjon. Kontakt contact@glasify.app eller privacy@glasify.app om appen eller personvernrettighetene dine.</p><p>Kun på nettsidens rotadresse spør nettleseren GeoJS om en landkode basert på IP-adressen for å velge norsk i Norge, svensk i Sverige, dansk i Danmark og engelsk ellers. GeoJS mottar IP-adressen og tilkoblingsdata. Glasify lagrer ikke oppslaget eller ber om presis posisjon. Direkte språklenker hopper over dette. Se https://www.geojs.io/privacy/.</p></body></html>

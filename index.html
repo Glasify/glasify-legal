@@ -26,77 +26,53 @@
   .langs a { text-decoration: none; }
   .langs a[aria-current] { color: #f5ebec; font-weight: 600; }
 </style>
-<link rel="alternate" hreflang="en" href="https://privacy.glasify.app/">
-<link rel="alternate" hreflang="nb" href="https://privacy.glasify.app/privacy-nb.html">
-<link rel="alternate" hreflang="sv" href="https://privacy.glasify.app/privacy-sv.html">
-<link rel="alternate" hreflang="da" href="https://privacy.glasify.app/privacy-da.html">
-<link rel="alternate" hreflang="de" href="https://privacy.glasify.app/privacy-de.html">
-<link rel="alternate" hreflang="pl" href="https://privacy.glasify.app/privacy-pl.html">
-<link rel="alternate" hreflang="fr" href="https://privacy.glasify.app/privacy-fr.html">
+
+
+
+
+
+
+
 </head>
-<body>
-<nav class="langs" aria-label="Language"><a href="index.html" hreflang="en" lang="en" aria-current="page">English</a> <a href="privacy-nb.html" hreflang="nb" lang="nb">Norsk</a> <a href="privacy-sv.html" hreflang="sv" lang="sv">Svenska</a> <a href="privacy-da.html" hreflang="da" lang="da">Dansk</a> <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a> <a href="privacy-pl.html" hreflang="pl" lang="pl">Polski</a> <a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a></nav>
-
+<body><nav aria-label="Language"><a href="privacy-nb.html" lang="nb">Norsk</a> · <a href="privacy-sv.html" lang="sv">Svenska</a> · <a href="privacy-da.html" lang="da">Dansk</a> · <a href="index.html" lang="en">English</a></nav>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: October 4, 2026</p>
-
+<p><strong>Last updated: October 14, 2026</strong></p>
 <h2>1. Overview</h2>
-<p>This Privacy Policy explains how Glasify ("we", "us") collects, uses, stores, and shares information when you use our App, including facial scan images used to generate your skin analysis. Glasify is operated by Planting Software, a sole proprietorship registered in Norway, which is the controller of your personal data.</p>
-
+<p>This Privacy Policy explains how Glasify (&quot;we&quot;, &quot;us&quot;) collects, uses, stores, and shares information when you use our App, including facial scan images used to generate your skin analysis. Glasify is operated by Planting Software, a sole proprietorship registered in Norway, which is the controller of your personal data.</p>
 <h2>2. Information We Collect</h2>
-<ul>
-  <li><strong>Face Scan Images:</strong> photos you capture or upload for analysis. These may constitute biometric or health-adjacent data in some jurisdictions.</li>
-  <li><strong>Scan Results:</strong> SkinScore, SkinAgeScan, Glow Profile, and routine data generated from your images. Your scan results are stored on our servers so your latest result can be restored if you reinstall the App and sign in again.</li>
-  <li><strong>Account Data:</strong> your Apple ID identity (via Sign in with Apple), used solely to create a persistent account tied to you rather than to a single device, and subscription status (processed via Apple's StoreKit; we do not receive your full payment card details).</li>
-  <li><strong>Optional Profile Data:</strong> date of birth, if you choose to provide it. It is stored only on your device and used to compute your age for result personalization and an optional birthday notification; only your age (not your date of birth) is sent with a scan.</li>
-  <li><strong>Launch Waitlist (website only):</strong> if you sign up on glasify.app to hear when Glasify launches on iPhone or Android, we store your email address and chosen platform solely to notify you, and delete them on request.</li>
-</ul>
-
+<ul><li><strong>Face Scan Images:</strong> photos you capture or upload for analysis. These may constitute biometric or health-adjacent data in some jurisdictions.</li><li><strong>Scan Results:</strong> SkinScore, SkinAgeScan, Glow Profile, and routine data generated from your images. Your scan results are stored on our servers so your latest result can be restored if you reinstall the App and sign in again.</li><li><strong>Account Data:</strong> your Apple ID identity (via Sign in with Apple), used solely to create a persistent account tied to you rather than to a single device, and subscription status (processed via Apple&#x27;s StoreKit; we do not receive your full payment card details).</li><li><strong>Optional Profile Data:</strong> date of birth, if you choose to provide it. It is stored only on your device and used to compute your age for result personalization and an optional birthday notification; only your age (not your date of birth) is sent with a scan.</li><li><strong>Launch Waitlist (website only):</strong> if you sign up on glasify.app to hear when Glasify launches on iPhone or Android, we store your email address and chosen platform solely to notify you, and delete them on request.</li></ul>
 <h2>3. How We Use Face Scan Images</h2>
-<p>Your face scan image is transmitted securely to our backend, which forwards it to our AI analysis provider (Anthropic's Claude API) solely to generate your skin analysis results. We do not use your face images to train third-party AI models, and we do not sell your face images.</p>
-
+<p>Only after you actively agree before a scan, Glasify sends your face photo (or extracted skin metrics), your age if provided, and selected language through our Render-hosted backend to Anthropic’s Claude API. Anthropic uses these inputs to generate your cosmetic skin analysis and routine. We do not include your Apple account identifier, email or payment details in the AI request. You can cancel without sending the photo. We do not sell your images or authorize their use for model training.</p>
 <h2>4. Storage &amp; Retention</h2>
-<p>Face scan images themselves are not retained after your results are generated. Your scan results (SkinScore, SkinAgeScan, Glow Profile, and routine data — not the underlying photo) are stored on our servers so your most recent result can be restored to your account, including after a reinstall, until you delete them. You may request deletion of your scan history at any time (see Section 9).</p>
-
+<p>Glasify does not persist the source photo in its database. Anthropic processes API inputs and outputs under its commercial terms and retention policy: standard API data is normally deleted within 30 days, subject to legal/safety exceptions and applicable model or account retention settings. Do not interpret account deletion in Glasify as immediate deletion from Anthropic’s systems. Your scan results and consent records are stored with your account until deletion; backups may take additional time to expire.</p>
 <h2>5. Biometric-Adjacent Data &amp; Consent</h2>
-<p>Facial scan images, and any pre-extracted skin metrics derived from them, may constitute biometric or health-adjacent data under some laws (for example, the EU GDPR's special category data provisions, or Illinois' Biometric Information Privacy Act). We process this data only on the basis of your explicit, informed consent, captured via a timestamped confirmation you actively check before each scan — this consent record is stored server-side as evidence.</p>
+<p>Facial scan images, and any pre-extracted skin metrics derived from them, may constitute biometric or health-adjacent data under some laws (for example, the EU GDPR&#x27;s special category data provisions, or Illinois&#x27; Biometric Information Privacy Act). We process this data only on the basis of your explicit, informed consent, captured via a timestamped confirmation you actively check before each scan — this consent record is stored server-side as evidence.</p>
 <p>You may withdraw consent at any time by deleting your account in Settings, which also deletes your stored scan results, derived metrics, and consent records from our systems within a reasonable period.</p>
-
 <h2>6. Third-Party Sharing</h2>
-<p>We share data with:</p>
-<ul>
-  <li>Our AI analysis provider (<strong>Anthropic</strong>), to process scan images and generate results.</li>
-  <li><strong>Apple</strong>, via Sign in with Apple and StoreKit, to authenticate you and process subscription purchases (we do not receive your payment credentials).</li>
-  <li>Our database provider (<strong>Supabase</strong>), to securely store your account and scan status.</li>
-  <li><strong>RevenueCat</strong>, which manages subscription status on our behalf, receiving your account identifier and purchase events from Apple (not your payment credentials).</li>
-  <li><strong>Render</strong>, our hosting provider, which runs the servers that handle your requests (including scan images in transit).</li>
-  <li>Affiliate retail partners, including <strong>YesStyle</strong>, ONLY in aggregate or click-level form necessary to attribute purchases made through our product links (e.g., that a click occurred) — we do not share your face images or full scan results with retail affiliate partners.</li>
-</ul>
+<p>We share data with:
+- Our AI analysis provider (<strong>Anthropic</strong>), to process scan images and generate results.
+- <strong>Apple</strong>, via Sign in with Apple and StoreKit, to authenticate you and process subscription purchases (we do not receive your payment credentials).
+- Our database provider (<strong>Supabase</strong>), to securely store your account and scan status.
+- <strong>RevenueCat</strong>, which manages subscription status on our behalf, receiving your account identifier and purchase events from Apple (not your payment credentials).
+- <strong>Render</strong>, our hosting provider, which runs the servers that handle your requests (including scan images in transit).
+- Affiliate retail partners, including <strong>YesStyle</strong>, ONLY in aggregate or click-level form necessary to attribute purchases made through our product links (e.g., that a click occurred) — we do not share your face images or full scan results with retail affiliate partners.</p>
 <p>We do not sell your personal data to data brokers.</p>
-
+<p>Our commercial AI provider is required to provide protection at least equivalent to the protections described in this policy through contractual confidentiality, data-processing and security obligations. Anthropic’s Data Processing Addendum governs processing, subprocessors and international transfer safeguards. See <a href="https://www.anthropic.com/legal/data-processing-addendum">Anthropic’s DPA</a> and <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">API retention policy</a>.</p>
 <h2>7. Legal Basis &amp; International Transfers</h2>
 <p>Where GDPR or similar law applies, we process face scan images based on your explicit consent (given at the time of scanning), given the sensitive nature of biometric-adjacent data. Data may be transferred to and processed in countries outside your own, using appropriate safeguards such as Standard Contractual Clauses.</p>
-
 <h2>8. Notifications</h2>
 <p>If you enable notifications, we schedule local, on-device reminders (ReplenishmentLoop) based on your estimated product usage. This scheduling happens on your device; we do not need to access your notification interactions to provide reminders.</p>
-
 <h2>9. Your Rights</h2>
-<p>Depending on your location, you may have the right to: access the personal data we hold about you; request correction or deletion of your data (including scan results); object to or restrict certain processing; and request a copy of your data in a portable format. To exercise these rights, contact <a href="mailto:privacy@glasify.app">privacy@glasify.app</a>. You can also delete your account, including all scan results, directly in the App under Settings. You also have the right to lodge a complaint with your local data protection authority (in Norway: Datatilsynet).</p>
-
-<h2>10. Children's Privacy</h2>
+<p>Depending on your location, you may have the right to: access the personal data we hold about you; request correction or deletion of your data (including scan results); object to or restrict certain processing; and request a copy of your data in a portable format. To exercise these rights, contact <strong>privacy@glasify.app</strong>. You can also delete your account, including all scan results, directly in the App under Settings. You also have the right to lodge a complaint with your local data protection authority (in Norway: Datatilsynet).</p>
+<h2>10. Children&#x27;s Privacy</h2>
 <p>Glasify is not directed at children under 18 and we do not knowingly collect face scan images or other personal data from children under that age. If you believe a child has provided us with data, contact us so we can delete it.</p>
-
 <h2>11. Security</h2>
 <p>We use industry-standard technical and organizational measures, including encryption in transit and at rest, to protect your data. No system is perfectly secure, and we cannot guarantee absolute security.</p>
-
 <h2>12. Changes to This Policy</h2>
 <p>We may update this Privacy Policy periodically. Material changes will be communicated in-app or via the update notes on the App Store.</p>
-
 <h2>13. Contact Us</h2>
-<p>For privacy questions or data requests, contact <a href="mailto:privacy@glasify.app">privacy@glasify.app</a>.</p>
-
+<p>For privacy questions or data requests, contact <strong>privacy@glasify.app</strong>.</p>
 <h2>14. Cosmetic &amp; Educational Disclaimer</h2>
 <p>Reminder: all results generated from your face scan images (SkinAgeScan, SkinScore, Glow Profile, and routine recommendations) are cosmetic and educational estimates only. They are not a medical diagnosis and this policy does not change that. See our Terms of Use for the full medical disclaimer.</p>
-
-</body>
-</html>
+<p>
+Apple processes subscription payments, cancellations and refund requests. Manage subscriptions at https://apps.apple.com/account/subscriptions and request an eligible refund at https://reportaproblem.apple.com. Apple decides refund eligibility. For questions about the app or your privacy rights, contact contact@glasify.app or privacy@glasify.app.</p><p>On the website root only, your browser asks GeoJS for an IP-based country code to choose Norwegian for Norway, Swedish for Sweden, Danish for Denmark and English everywhere else. GeoJS receives your IP address and connection metadata. Glasify does not store this lookup or request precise location. Direct language links skip it. See https://www.geojs.io/privacy/.</p></body></html>
